@@ -1,0 +1,16 @@
+ehm:
+  image: elk-noc:1.1 
+  hostname: elk-noc
+  volumes:
+  - /opt/elk/conf:/opt/elk/conf
+  - /opt/elk/logs:/opt/elk/logs
+  - /opt/elk/certs:/opt/elk/certs
+  - /opt/elk/data:/opt/elk/data
+  - /opt/elk/work:/opt/elk/work
+  ports:
+  - 49152:49152/udp
+  - 49152:49152/tcp
+  - 5043:5043
+  - 5601:5601
+  - 9200:9200
+  - 49021:49021
