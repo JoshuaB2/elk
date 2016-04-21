@@ -1,6 +1,6 @@
-ehm:
+elk:
   image: elk-noc:1.1 
-  hostname: elk-noc
+  hostname: elk
   volumes:
   - /opt/elk/conf:/opt/elk/conf
   - /opt/elk/logs:/opt/elk/logs
